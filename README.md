@@ -1,6 +1,6 @@
 <!--
-title: 'AWS Simple HTTP Endpoint example in Python'
-description: 'This example demonstrates how to setup a simple HTTP GET endpoint. Once you ping it, it will reply with the current time.'
+title: 'Process HTML Title in Python'
+description: 'This example demonstrates how to extract the title tag of a HTML document as response to a petition.'
 layout: Doc
 framework: v1
 platform: AWS
