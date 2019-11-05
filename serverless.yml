@@ -1,0 +1,23 @@
+org: suarezmanuel
+app: firsttestserverless-app
+service: aws-python-simple-http-endpoint
+
+frameworkVersion: ">=1.2.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: python3.7
+
+functions:
+  currentTime:
+    handler: handler.endpoint
+    events:
+      - http:
+          path: unPath
+          method: get
+  otraFuncion:
+    handler: handler.anotherFunc
+    events:
+      - http:
+          path: anotherFunc
+          method: post
