@@ -30,12 +30,12 @@ def anotherFunc(event, context):
     #formatted_address = data['results'][0]['formatted_address'] 
     #print("Latitude:%s\nLongitude:%s\nFormatted Address:%s"%(latitude, longitude,formatted_address))
     body = {
-        "message": "Wolol23o!",
         "input": event,
         "elTextoDeR": r.text
     }
     response = {
         "statusCode": 200,
+        "message": "Este es un mensaje de prueba",
         #"body": json.dumps(body)
         "respuesta": r.text
     }
