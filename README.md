@@ -14,6 +14,10 @@ This example demonstrates how to extract the title tag of a HTML document as res
 
 ## Deploy
 
+Endpoints:
+```bash
+GET - https://6wp5fr5735.execute-api.us-east-1.amazonaws.com/dev/getTitle
+```
 Example:
 
 ```bash
