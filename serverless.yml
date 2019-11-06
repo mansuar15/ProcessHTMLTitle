@@ -1,6 +1,6 @@
 org: suarezmanuel
 app: firsttestserverless-app
-service: aws-python-simple-http-endpoint
+service: aws-python-http-getTitle
 
 frameworkVersion: ">=1.2.0 <2.0.0"
 
