@@ -32,15 +32,14 @@ def anotherFunc(event, context):
     #longitude = data['results'][0]['geometry']['location']['lng'] 
     #formatted_address = data['results'][0]['formatted_address'] 
     #print("Latitude:%s\nLongitude:%s\nFormatted Address:%s"%(latitude, longitude,formatted_address))
-    body = {
-        "input": event,
-        "elTextoDeCambio": r.text
-    }
+    soup = BeautifulSoup(r.text, "html.parser")
+
     response = {
         "statusCode": 200,
         "message": event,
         #"body": json.dumps(body)
-        "respuesta": r.text
+        #"HTMLResponse": r.text
+        "Title": soup.title.text
     }
 
     return response
