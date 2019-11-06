@@ -9,15 +9,9 @@ provider:
   runtime: python3.7
 
 functions:
-  currentTime:
-    handler: handler.endpoint
+  getTitle:
+    handler: handler.getTitle
     events:
       - http:
-          path: unPath
+          path: getTitle
           method: get
-  otraFuncion:
-    handler: handler.anotherFunc
-    events:
-      - http:
-          path: anotherFunc
-          method: post
