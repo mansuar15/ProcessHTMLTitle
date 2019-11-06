@@ -14,8 +14,8 @@ This example demonstrates how to extract the title tag of a HTML document as res
 
 ## Deploy
 
-In order to deploy the you endpoint simply run
+Example:
 
 ```bash
-serverless invoke -f otraFuncion -d params
+serverless invoke -f getTitle -d www.google.com
 ```
