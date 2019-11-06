@@ -1,6 +1,8 @@
 import json
 import datetime
 import requests
+import urllib3
+from bs4 import BeautifulSoup
 
 
 def endpoint(event, context):
@@ -23,6 +25,7 @@ def anotherFunc(event, context):
     #r = requests.get(url = URL, params = PARAMS) 
     r = requests.get('http://www.imdb.com/title/tt0108778/')
     r = requests.get('http://www.google.com/')
+    #r=requests.get(event)
     #data = r.json() 
 
     #latitude = data['results'][0]['geometry']['location']['lat'] 
@@ -35,7 +38,7 @@ def anotherFunc(event, context):
     }
     response = {
         "statusCode": 200,
-        "message": "Este es un mensaje de prueba",
+        "message": event,
         #"body": json.dumps(body)
         "respuesta": r.text
     }
