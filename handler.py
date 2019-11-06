@@ -31,7 +31,7 @@ def anotherFunc(event, context):
     #print("Latitude:%s\nLongitude:%s\nFormatted Address:%s"%(latitude, longitude,formatted_address))
     body = {
         "input": event,
-        "elTextoDeR": r.text
+        "elTextoDeCambio": r.text
     }
     response = {
         "statusCode": 200,
